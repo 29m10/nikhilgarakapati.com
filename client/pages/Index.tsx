@@ -24,16 +24,24 @@ export default function Index() {
                 >
                   Enterpret
                 </a>
-                , where I help companies transform unstructured user feedback into actionable insights to build better products and experiences.
+                , where I help companies transform unstructured user feedback
+                into actionable insights to build better products and
+                experiences.
               </p>
               <p className="text-slate-700 leading-[26px]">
-                In past, I've engineered software systems at Samsung Research and built applications for the Delhi and Indian governments. I studied computer science at IIIT Hyderabad and researched behavioral economics at NTU Taiwan, exploring decision-making.
+                In past, I've engineered software systems at Samsung Research
+                and built applications for the Delhi and Indian governments. I
+                studied computer science at IIIT Hyderabad and researched
+                behavioral economics at NTU Taiwan, exploring decision-making.
               </p>
               <p className="text-slate-700 leading-[26px]">
-                I'm fascinated by the intersection of human psychology and technology. I find joy in building systems and experiences.
+                I'm fascinated by the intersection of human psychology and
+                technology. I find joy in building systems and experiences.
               </p>
               <p className="text-slate-700 leading-[26px]">
-                In my downtime you'll find me being snooty about coffee, reading books, and enjoying fringe rock music. I write technology, optimism, and human behavior on
+                In my downtime you'll find me being snooty about coffee, reading
+                books, and enjoying fringe rock music. I write technology,
+                optimism, and human behavior on
                 <a
                   target="_blank"
                   rel="noopener"
@@ -57,7 +65,6 @@ export default function Index() {
           </div>
 
           <hr className="w-full border-b border-gray-200 opacity-60 mt-0 mb-4" />
-
         </div>
       </div>
     </div>
