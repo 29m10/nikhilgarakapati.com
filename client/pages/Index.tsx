@@ -58,24 +58,8 @@ export default function Index() {
 
           <hr className="w-full border-b border-gray-200 opacity-60 mt-0 mb-4" />
 
-          <div className="w-full">
-            <a
-              href="https://vivekkaushal.com/blog/the-6-tools-and-a-workflow-to-build-using-ai"
-              className="inline outline-offset-2 transition-colors duration-150 border-b border-black"
-            >
-              <div className="text-sky-600 transition-colors duration-150">
-                <p className="text-[14px] leading-[22.75px] tracking-[0.35px] mb-2 text-gray-500">
-                  Latest writing
-                </p>
-                <h2 className="text-[18px] leading-[24.75px] font-semibold mb-2 cursor-pointer">
-                  The 6 tools, and a workflow to build using AI
-                </h2>
-                <p className="text-slate-600 overflow-hidden text-ellipsis">
-                  My current workflow of leveraging AI to build software, and AI.
-                </p>
-              </div>
-            </a>
-          </div>
+          {/* Latest writing section removed per user request */}
+
         </div>
       </div>
     </div>
