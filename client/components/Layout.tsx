@@ -17,36 +17,19 @@ export default function Layout() {
               </p>
             </Link>
             <nav className="flex items-center gap-8">
-              <a
-                href="https://vivekkaushal.com/blog"
+              <Link
+                to="/writing"
                 className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
               >
                 <span>Writing</span>
-              </a>
-              <a
-                href="https://vivekkaushal.com/projects"
-                className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
-              >
-                <span>Projects</span>
-              </a>
-              <a
-                href="https://vivekkaushal.com/research"
-                className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
-              >
-                <span>Research</span>
-              </a>
-              <a
-                href="https://vivekkaushal.com/recommendations"
-                className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
-              >
-                <span>Reads</span>
-              </a>
-              <a
-                href="https://vivekkaushal.com/bucketlist"
+              </Link>
+
+              <Link
+                to="/bucketlist"
                 className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
               >
                 <span>Bucket List</span>
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
