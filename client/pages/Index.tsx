@@ -58,8 +58,6 @@ export default function Index() {
 
           <hr className="w-full border-b border-gray-200 opacity-60 mt-0 mb-4" />
 
-          {/* Latest writing section removed per user request */}
-
         </div>
       </div>
     </div>
