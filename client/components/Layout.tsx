@@ -58,7 +58,7 @@ export default function Layout() {
 
       <footer className="border-t border-gray-200 mt-20 py-8">
         <div className="mx-auto w-full max-w-[640px] px-6">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 justify-center">
             <a
               target="_blank"
               rel="noopener"
