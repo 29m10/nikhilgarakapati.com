@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 type Item = {
   id: number;
@@ -27,6 +27,10 @@ const ITEMS: Item[] = [
 ];
 
 export default function BucketList() {
+  useEffect(() => {
+    document.title = "Bucket List - Nikhil Garakapati";
+  }, []);
+
   const total = ITEMS.length;
   const completed = ITEMS.filter((i) => i.done).length;
 
@@ -34,7 +38,9 @@ export default function BucketList() {
     <div className="pb-24 pt-24">
       <div className="mx-auto w-full max-w-[720px] px-6">
         <div className="prose prose-slate max-w-none">
-          <p className="text-sm text-slate-600 mb-2">
+          <h1 className="text-3xl font-semibold text-slate-900 mb-4">Bucket List</h1>
+
+          <p className="text-sm text-slate-600 mb-4">
             I was inspired by Chip Hyuen’s List 100 to create and maintain this list. This
             list is a collection of moments that I want to experience before I drop off the face of this planet.
           </p>
