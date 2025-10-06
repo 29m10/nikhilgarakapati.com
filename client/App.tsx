@@ -11,8 +11,6 @@ import Writing from "./pages/Writing";
 import BucketList from "./pages/BucketList";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
-import Writing from "./pages/Writing";
-import BucketList from "./pages/BucketList";
 
 const queryClient = new QueryClient();
 
