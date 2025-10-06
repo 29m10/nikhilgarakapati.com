@@ -6,104 +6,134 @@
 @tailwind utilities;
 
 @layer base {
-  /**
-   * Tailwind CSS theme
-   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
-   * A different format will require also updating the theme in tailwind.config.ts.
-  */
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  /* Chakra UI CSS Variables */
+  :root, [data-theme] {
+    --chakra-ring-inset: var(--chakra-empty,/*!*/ /*!*/);
+    --chakra-colors-transparent: transparent;
+    --chakra-colors-white: #FFFFFF;
+    --chakra-colors-gray-25: #fcfcfd;
+    --chakra-colors-gray-100: #f3f4f6;
+    --chakra-colors-gray-200: #e5e7eb;
+    --chakra-colors-gray-500: #6b7280;
+    --chakra-colors-gray-600: #4b5563;
+    --chakra-colors-gray-700: #374151;
+    --chakra-colors-gray-800: #1f2937;
+    --chakra-colors-gray-900: #111827;
+    --chakra-colors-brand-300: #7dd3fc;
+    --chakra-colors-brand-700: #0369a1;
+    --chakra-fonts-body: Inter,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+    --chakra-fontSizes-md: 1rem;
+    --chakra-lineHeights-base: 1.5;
+    --chakra-lineHeights-tall: 1.625;
+    --chakra-space-4: 1rem;
+    --chakra-space-6: 1.5rem;
+    --chakra-space-12: 3rem;
+    --chakra-space-16: 4rem;
+    --chakra-space-24: 6rem;
+    --chakra-sizes-prose: 60ch;
+    --chakra-sizes-container-sm: 640px;
+    --chakra-transition-duration-normal: 200ms;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  :root[data-theme="light"], [data-theme][data-theme="light"] {
+    --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+    --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+    --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+    --chakra-colors-chakra-inverse-text: var(--chakra-colors-white);
+    --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-100);
+    --chakra-colors-chakra-subtle-text: var(--chakra-colors-gray-600);
+    --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
   }
 }
 
 @layer base {
+  /* Global styles */
+  :where(*) {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
   * {
-    @apply border-border;
+    border-color: var(--chakra-colors-chakra-border-color);
+  }
+
+  * {
+    border-color: var(--chakra-colors-gray-200);
+  }
+
+  *, :before, :after {
+    border-color: var(--chakra-colors-chakra-border-color);
+  }
+
+  :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
+    margin: 0px;
+  }
+
+  a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  /* Body styles */
+  html {
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    touch-action: manipulation;
+    background: var(--chakra-colors-gray-25);
+    color: var(--chakra-colors-gray-900);
+    font-feature-settings: "rlig", "calt";
+    letter-spacing: -0.011em;
   }
 
   body {
-    @apply bg-background text-foreground;
+    font-family: var(--chakra-fonts-body);
+    color: var(--chakra-colors-chakra-body-text);
+    background: var(--chakra-colors-chakra-body-bg);
+    transition-property: background-color;
+    transition-duration: var(--chakra-transition-duration-normal);
+    line-height: var(--chakra-lineHeights-base);
+    background: var(--chakra-colors-gray-25);
+    color: var(--chakra-colors-gray-900);
+    font-feature-settings: "rlig", "calt";
+    letter-spacing: -0.011em;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    min-height: 100%;
+    font-feature-settings: "kern";
+    transition: opacity ease-in 0.2s;
+  }
+
+  /* Link styles */
+  .css-8xkugk {
+    cursor: pointer;
+    text-decoration: none;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    color: #0284c7;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--chakra-colors-transparent);
+    transition: 0.15s;
+  }
+
+  .css-8xkugk:hover {
+    text-decoration: none;
+    color: var(--chakra-colors-brand-700);
+    border-color: var(--chakra-colors-brand-300);
+  }
+
+  /* Text styles */
+  .css-gafzuq {
+    font-size: var(--chakra-fontSizes-md);
+    color: var(--chakra-colors-gray-700);
+    line-height: var(--chakra-lineHeights-tall);
   }
 }
