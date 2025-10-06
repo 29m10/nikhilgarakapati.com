@@ -6,65 +6,62 @@ export default function Index() {
   }, []);
 
   return (
-    <div className="pb-24 pt-24">
+    <div className="pb-12 pt-12">
       <div className="mx-auto w-full max-w-[640px] px-6">
-        <div className="flex flex-col items-start gap-12">
+        <div className="flex flex-col items-start gap-8">
           <div className="max-w-[605.625px]">
             <p className="text-[24px] leading-[39px] mb-8 text-slate-800">
-              <span>Hello, I'm Vivek Kaushal.</span>
+              <span>Hello, I'm Nikhil.</span>
             </p>
             <div className="flex flex-col items-start gap-6">
               <p className="text-slate-700 leading-[26px]">
-                I'm the founding Product Manager at
+                I'm a Product Manager at
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://enterpret.com/"
+                  href="https://order.siterecon.ai/"
                   className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
                 >
-                  Enterpret
+                  SiteRecon
                 </a>
-                , where I help companies transform unstructured user feedback
-                into actionable insights to build better products and
-                experiences.
+                , where I help landscaping companies improve sales, retention, and profitability using advanced mapping and job site management tools, and of course, with the help of AI as well.
               </p>
               <p className="text-slate-700 leading-[26px]">
-                In past, I've engineered software systems at Samsung Research
-                and built applications for the Delhi and Indian governments. I
-                studied computer science at IIIT Hyderabad and researched
-                behavioral economics at NTU Taiwan, exploring decision-making.
-              </p>
-              <p className="text-slate-700 leading-[26px]">
-                I'm fascinated by the intersection of human psychology and
-                technology. I find joy in building systems and experiences.
-              </p>
-              <p className="text-slate-700 leading-[26px]">
-                In my downtime you'll find me being snooty about coffee, reading
-                books, and enjoying fringe rock music. I write technology,
-                optimism, and human behavior on
+                In the past, I've worked with
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://vivekkaushal.substack.com/"
+                  href="https://fitmint.io/"
                   className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
                 >
-                  Applied Techno-optimism
-                </a>
-                <span className="mx-1">and</span>
+                  Fitmint
+                </a> (Seed round),
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://twitter.com/vi_kaushal"
-                  className="inline text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
+                  href="https://mymedisage.com/"
+                  className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
                 >
-                  X
-                </a>
-                .
+                  MediSage
+                </a> (Series A), and
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://goapptiv.com/"
+                  className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
+                >
+                  GoApptiv
+                </a>                 (Series B), building a Web3 fitness app, scaling a LinkedIn-like platform for healthcare professionals, and leveraging tech to deliver quality medicines across India. Those experiences shaped my journey from engineering to product management.
               </p>
+              <p className="text-slate-700 leading-[26px]">
+               In my downtime, you'll find me watching football (not soccer), cheering for <span style={{backgroundColor: '#F7B5CD'}} className="text-slate-800 px-1">Messi</span>, and rewatching prime El Clásico highlights, much to the annoyance of my friends.
+              </p>
+                <p className="text-slate-700 leading-[26px]">
+                  I also love exploring new places and trying out local, authentic food wherever I go, recently, I visited <span className="bg-yellow-200 text-slate-800 px-1">Manali</span> and <span className="bg-yellow-200 text-slate-800 px-1">Udaipur</span>, two completely different geographies that somehow felt equally amazing in their own ways.
+                </p>
             </div>
           </div>
 
-          <hr className="w-full border-b border-gray-200 opacity-60 mt-0 mb-4" />
         </div>
       </div>
     </div>
