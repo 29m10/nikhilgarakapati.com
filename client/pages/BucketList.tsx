@@ -15,10 +15,12 @@ export default function BucketList() {
             </h1>
             <div className="flex flex-col items-start gap-6">
               <p className="text-slate-700 leading-[26px]">
-                A collection of experiences, places, and goals I'd like to accomplish in my lifetime.
+                A collection of experiences, places, and goals I'd like to
+                accomplish in my lifetime.
               </p>
               <p className="text-slate-700 leading-[26px]">
-                This page is currently under construction. Check back soon for my personal bucket list!
+                This page is currently under construction. Check back soon for
+                my personal bucket list!
               </p>
             </div>
           </div>
