@@ -18,13 +18,6 @@ export default function Layout() {
             </Link>
             <nav className="flex items-center gap-8">
               <Link
-                to="/writing"
-                className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
-              >
-                <span>Writing</span>
-              </Link>
-
-              <Link
                 to="/bucketlist"
                 className="text-[14px] leading-[21px] font-medium text-slate-600 pb-1 border-b-2 border-transparent hover:border-black transition-colors cursor-pointer"
               >
