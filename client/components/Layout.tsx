@@ -8,7 +8,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-[rgb(252,252,253)] relative transition-colors duration-200">
-      <header className="sticky top-0 z-10 backdrop-blur bg-white/80 border-b border-gray-200">
+      <header className="sticky top-0 z-10 backdrop-blur bg-[rgb(252,252,253)]/80">
         <div className="mx-auto w-full max-w-[1024px] px-6">
           <div className="flex items-center justify-between py-4">
             <Link to="/" className="cursor-pointer select-none">

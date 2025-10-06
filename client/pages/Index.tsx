@@ -20,7 +20,7 @@ export default function Index() {
                   target="_blank"
                   rel="noopener"
                   href="https://order.siterecon.ai/"
-                  className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
+                  className="inline ml-1 text-sky-600 hover:underline hover:underline-offset-4 transition-colors duration-150"
                 >
                   SiteRecon
                 </a>
@@ -32,7 +32,7 @@ export default function Index() {
                   target="_blank"
                   rel="noopener"
                   href="https://fitmint.io/"
-                  className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
+                  className="inline ml-1 text-sky-600 hover:underline hover:underline-offset-4 transition-colors duration-150"
                 >
                   Fitmint
                 </a> (Seed round),
@@ -40,7 +40,7 @@ export default function Index() {
                   target="_blank"
                   rel="noopener"
                   href="https://mymedisage.com/"
-                  className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
+                  className="inline ml-1 text-sky-600 hover:underline hover:underline-offset-4 transition-colors duration-150"
                 >
                   MediSage
                 </a> (Series A), and
@@ -48,7 +48,7 @@ export default function Index() {
                   target="_blank"
                   rel="noopener"
                   href="https://goapptiv.com/"
-                  className="inline ml-1 text-sky-600 border-b border-black outline-offset-2 transition-colors duration-150"
+                  className="inline ml-1 text-sky-600 hover:underline hover:underline-offset-4 transition-colors duration-150"
                 >
                   GoApptiv
                 </a>                 (Series B), building a Web3 fitness app, scaling a LinkedIn-like platform for healthcare professionals, and leveraging tech to deliver quality medicines across India. Those experiences shaped my journey from engineering to product management.
